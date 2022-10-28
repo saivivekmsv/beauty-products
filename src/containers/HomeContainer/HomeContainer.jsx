@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import * as Icons from '@fortawesome/free-regular-svg-icons';
 import { PromiseContainer } from './promiseConatiner';
 const productPromises = [
   {

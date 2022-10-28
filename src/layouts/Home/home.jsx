@@ -1,4 +1,3 @@
-import logo from '../../logo.svg';
 import { HomeContainer } from '../../containers';
 const Home = (props) => {
   return <HomeContainer {...props} />;
