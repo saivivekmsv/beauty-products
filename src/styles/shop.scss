@@ -1,0 +1,13 @@
+.shop-container {
+  .main-header {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  .product-card {
+    margin-top: 2rem;
+    .product {
+      box-shadow: 1px 1px 6px #848376;
+      cursor: pointer;
+    }
+  }
+}

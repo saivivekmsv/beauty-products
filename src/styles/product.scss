@@ -1,0 +1,84 @@
+.main-product-container {
+  @include media-breakpoint-up(lg) {
+    padding-left: 6%;
+    padding-right: 6%;
+    .card-img-top {
+      border-radius: 2rem;
+    }
+    .card-img-bottom {
+      border-radius: 6px;
+    }
+    .product-main-header {
+      font-size: xxx-large;
+      font-weight: bolder;
+    }
+    .product-reviews {
+      margin: 1rem 1rem;
+      .product-rating {
+        font-size: 1rem;
+        color: grey;
+        margin-right: 0.2rem;
+      }
+      .product-rating-font {
+        font-size: 1rem;
+        color: grey;
+        margin-left: 0.2rem;
+      }
+    }
+
+    .price-product {
+      margin: 2rem 1rem 1rem 1rem;
+      font-size: 1.5rem;
+    }
+    .quantity-text {
+      margin: 0.5rem 1rem;
+    }
+    .add-product {
+      margin: 0.5rem 1rem;
+      width: 20%;
+      border: 2px solid grey;
+      border-radius: 6px;
+      padding: 0.2rem;
+    }
+    .add-cart-button {
+      border: 2px solid grey;
+      border-radius: 6px;
+      padding: 0.3rem;
+      text-align: center;
+      margin: 1rem;
+    }
+
+    .buy-now-button {
+      border: 2px solid grey;
+      border-radius: 6px;
+      background-color: azure;
+      padding: 0.3rem;
+      text-align: center;
+      margin: 1rem;
+    }
+    .description-box {
+      margin: 1rem;
+      .description-header {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+    }
+    .how-to-use-container {
+      margin: 1rem;
+      .header-how-to-use {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+    }
+    .ingredients-container {
+      margin: 1rem;
+      .ingredients-header {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
