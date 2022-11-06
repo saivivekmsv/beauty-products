@@ -1,18 +1,18 @@
-import { PromiseContainer } from './promiseConatiner';
-const productPromises = [
-  {
-    name: 'eco conscious practices',
-  },
-  {
-    name: 'plant powered formulas',
-  },
-  {
-    name: 'cruelty free, always',
-  },
-  {
-    name: 'competitive pricing',
-  },
-];
+// import { PromiseContainer } from './promiseConatiner';
+// const productPromises = [
+//   {
+//     name: 'eco conscious practices',
+//   },
+//   {
+//     name: 'plant powered formulas',
+//   },
+//   {
+//     name: 'cruelty free, always',
+//   },
+//   {
+//     name: 'competitive pricing',
+//   },
+// ];
 const HomeConatiner = (props) => {
   return (
     <div className="container-fluid home fluid-container-padding">
