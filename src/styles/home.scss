@@ -1,5 +1,35 @@
 .home {
   @include media-breakpoint-up(md) {
+    .our-products {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1rem;
+
+      .products-text {
+        font-size: 2rem;
+        font-weight: bolder;
+        color: #5e5f4f;
+        text-align: center;
+      }
+      .shop-for {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+        .shop-for-card {
+          width: 20%;
+          box-shadow: 1px 1px 10px wheat;
+          .shop-card-image {
+            width: 100%;
+            object-fit: cover;
+          }
+          .inner-shop-card-text {
+            padding: 0.5rem;
+            text-align: center;
+          }
+        }
+      }
+    }
     .home-page-banner {
       display: flex;
       width: 100%;
@@ -8,6 +38,7 @@
       min-height: 40rem;
       align-items: center;
       justify-content: center;
+
       .home-page-image-container {
         width: 100%;
         position: absolute;
@@ -103,12 +134,23 @@
     }
     .product-nature-container {
       display: flex;
-      flex-direction: column;
       background-color: #f2efe6;
-      justify-content: center;
       padding: 1rem;
       margin-top: 2rem;
-      text-align: center;
+      height: 35vh;
+      align-items: center;
+      justify-content: space-evenly;
+      .product-nature-description {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        text-align: center;
+        .description-heading {
+          font-size: 1.2rem;
+        }
+        .description {
+        }
+      }
       .product-nature-container-heading {
         font-size: 2rem;
         font-weight: bolder;
@@ -116,7 +158,6 @@
       }
       .product-nature-inner-container {
         display: flex;
-        justify-content: center;
         margin-top: 1rem;
       }
     }

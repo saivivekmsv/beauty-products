@@ -2,11 +2,15 @@
   @include media-breakpoint-up(lg) {
     padding-left: 6%;
     padding-right: 6%;
-    .card-img-top {
-      border-radius: 2rem;
-    }
-    .card-img-bottom {
-      border-radius: 6px;
+    .product-images {
+      padding: 0rem 2rem;
+
+      .card-img-top {
+        border-radius: 1rem;
+      }
+      .card-img-bottom {
+        border-radius: 6px;
+      }
     }
     .product-main-header {
       font-size: xxx-large;

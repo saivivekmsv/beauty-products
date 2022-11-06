@@ -2,7 +2,6 @@
   @include media-breakpoint-up(sm) {
     display: flex;
     flex-direction: column;
-    height: 6rem;
     padding: 1rem;
     position: sticky;
     background-color: #ffffff;
@@ -11,32 +10,108 @@
     .menu-bar-heading {
       display: flex;
       justify-content: center;
-      font-size: medium;
-      font-weight: bolder;
+      font-size: 1.6rem;
+      font-weight: bold;
     }
     .menu-bar-links {
       display: flex;
       flex-direction: row;
       justify-content: center;
       padding: 0.25rem;
-      .link-buttons {
-        display: flex;
-        list-style-type: none;
-        .link-text {
-          white-space: nowrap;
-          padding: 0 0.2rem;
-          .link-tag {
-            text-decoration: none;
-            color: black;
+      // .menu-bar-dropdown{
+      //   .link-tag{
+
+      //   }
+      //   .shop-now-dropdown{
+
+      //   }
+      // }
+      .menu-bar-dropdown {
+        .link-tag {
+          text-decoration: none;
+          color: black;
+        }
+        .link-tag:active {
+          text-decoration: underline;
+        }
+        .link-tag:hover {
+          text-decoration: underline;
+          .shop-now-dropdown {
+            visibility: visible;
           }
-          .link-tag:active {
-            text-decoration: underline;
+        }
+        .shop-now-dropdown {
+          display: flex;
+          position: absolute;
+          background: #ffffff;
+          z-index: 5;
+          visibility: hidden;
+          padding: 1rem;
+          align-items: center;
+
+          .shop-all-skin-care-text {
+            .link-tag-text {
+              text-decoration: none;
+              color: black;
+            }
+            .link-tag-text:hover {
+              font-weight: bold;
+            }
           }
-          .link-tag:hover {
-            font-weight: bold;
+          .sub-products-skin-care {
+            display: flex;
+            flex-direction: column;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            .link-tag-categories {
+              text-decoration: none;
+              color: black;
+            }
+            .link-tag-categories:active {
+              text-decoration: underline;
+            }
+            .link-tag-categories:hover {
+              font-weight: bold;
+            }
+            .shop-by-category {
+              border-bottom: 1px solid grey;
+              padding: 0.5rem;
+              margin-bottom: 0.5rem;
+            }
           }
         }
       }
+      .menu-bar-items {
+        margin: 0rem 0.7rem;
+        .link-tag {
+          text-decoration: none;
+          color: black;
+        }
+        .link-tag:active {
+          text-decoration: underline;
+        }
+        .link-tag:hover {
+          font-weight: bold;
+        }
+      }
+      // .link-buttons {
+      //   display: flex;
+      //   list-style-type: none;
+      //   .link-text {
+      //     white-space: nowrap;
+      //     padding: 0 0.2rem;
+      //     .link-tag {
+      //       text-decoration: none;
+      //       color: black;
+      //     }
+      //     .link-tag:active {
+      //       text-decoration: underline;
+      //     }
+      //     .link-tag:hover {
+      //       font-weight: bold;
+      //     }
+      //   }
+      // }
     }
   }
 }

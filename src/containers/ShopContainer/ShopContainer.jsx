@@ -12,7 +12,7 @@ const ShopContainer = (props) => {
             <div className="col-12 col-lg-3 product-card">
               <div
                 className="card product"
-                onClick={() => history.push('/shop-page/product')}
+                onClick={() => history.push('/product')}
               >
                 <img
                   src="https://cdn.shopify.com/s/files/1/0451/7468/5852/products/95D95493-3620-48F1-BB6D-2534B16D3521.jpg?v=1667148948&width=533"
